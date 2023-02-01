@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Define the connection string
 conn_str = 'Driver={ODBC Driver 18 for SQL Server};Server=tcp:database-form.database.windows.net,1433;Database=database-form;Uid=moraesl95;Pwd={3tikD7f8o9!};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
 
-@app.route('/api/users', methods=['POST'])
+@app.route('/', methods=['POST'])
 def add_user():
     # Get the form data
     name = request.form.get('name')
